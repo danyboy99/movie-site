@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@font-face {
+    font-family: 'Rubik';
+    src: url(Rubik_Moonrocks/RubikMoonrocks-Regular.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F28C28; 
+    font-family: 'Poppins','san-serif';
+    margin: 0;
+}
+header{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #D27D2D;
+}
+.domain-name{
+font-family: "Rubik";
+font-size: 40px;
+padding-left: 40px;
+color: bisque;
+}
+.search{
+    background-color: transparent;
+    border: 2px solid #F28C28;
+    border-radius: 45px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 30px 0 0 0 ;
+    color: black;
+}
+.search::placeholder{
+    color: #8B4000;
+}
+.search:focus{
+    outline: none;
+    background-color:#F28C28 ;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie{
+    width: 300px;
+    margin: 16px;
+    background-color: #D27D2D;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.movie img{
+    width: 100%;
+}
+.movie-info{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px 16px;
+    letter-spacing: 0.5px;
+
+}
+.movie-info h4{
+    margin: 0;
+}
+.movie-info span{
+    background-color: #F28C28;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight:bold;
+}
+.movie-info span.green{
+    color: green;
+}
+.movie-info span.orange{
+    color: orange;
+}
+.movie-info span.red{
+    color: red;
+}
+.overview{
+    background-color: blanchedalmond;
+    padding: 34px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.5s ease-in;
+}
+.movie:hover .overview{
+    transform: translateY(0%);
+}
